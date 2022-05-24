@@ -7,7 +7,7 @@ android {
     compileSdk = 32
 
     defaultConfig {
-        applicationId = "com.saradey.studio.ancient.egypt"
+        applicationId = "com.saradey.studio.ancient.egypt.ui_sandbox"
         minSdk = 23
         targetSdk = 32
         versionCode = 1

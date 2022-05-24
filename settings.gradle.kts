@@ -13,3 +13,5 @@ dependencyResolutionManagement {
     }
 }
 include(":app")
+include(":ui-kit")
+include(":ui-sandbox")
