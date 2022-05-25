@@ -1,0 +1,32 @@
+[versions]
+#https://dagger.dev/hilt/gradle-setup
+daggerHilt = "2.42"
+#https://github.com/Kotlin/kotlinx.coroutines
+coroutines = "1.6.1"
+# https://github.com/square/retrofit
+retrofit = "2.9.0"
+# https://github.com/square/okhttp
+okhttp = "4.9.3"
+
+[libraries]
+#Dagger Hilt
+dagger-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "daggerHilt" }
+dagger-hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "daggerHilt" }
+#Dagger Hilt instrumentation tests
+dagger-hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "daggerHilt" }
+
+#Coroutines
+kotlin-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlin-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlin-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+
+# Retrofit
+retrofit-core = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+
+# OkHttp
+okhttp-core = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+okhttp-loggingInterceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp" }
+
+# Gson https://github.com/google/gson
+gson = "com.google.code.gson:gson:2.9.0"

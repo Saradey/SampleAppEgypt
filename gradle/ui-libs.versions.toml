@@ -1,0 +1,21 @@
+[versions]
+#https://developer.android.com/topic/libraries/architecture/paging/v3-overview
+pagingVersion = "3.1.1"
+
+[libraries]
+app-compat = "androidx.appcompat:appcompat:1.4.1"
+material = "com.google.android.material:material:1.6.0"
+constraint-layout = "androidx.constraintlayout:constraintlayout:2.1.4"
+androidx-recyclerview = "androidx.recyclerview:recyclerview:1.2.1"
+
+# Glide
+# https://github.com/bumptech/glide
+glide-core = "com.github.bumptech.glide:glide:4.13.0"
+
+# ViewBindingPropertyDelegate https://github.com/kirich1409/ViewBindingPropertyDelegate/
+viewBindingPropertyDelegate = "com.github.kirich1409:viewbindingpropertydelegate-noreflection:1.5.6"
+
+#Paging 3
+paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "pagingVersion" }
+#alternatively - without Android dependencies for tests
+paging-common = { module = "androidx.paging:paging-common", version.ref = "pagingVersion" }

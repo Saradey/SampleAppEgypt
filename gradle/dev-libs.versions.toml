@@ -1,0 +1,5 @@
+[libraries]
+#https://github.com/ChuckerTeam/chucker
+chucker = "com.github.chuckerteam.chucker:library:3.5.2"
+#https://square.github.io/leakcanary/getting_started/
+leak-canary = "com.squareup.leakcanary:leakcanary-android:2.9.1"

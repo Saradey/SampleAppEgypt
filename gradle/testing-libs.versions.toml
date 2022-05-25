@@ -1,0 +1,4 @@
+[libraries]
+test-junit = "junit:junit:4.13.2"
+test-junit-ext = "androidx.test.ext:junit:1.1.3"
+test-espresso-core = "androidx.test.espresso:espresso-core:3.4.0"

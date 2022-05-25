@@ -1,0 +1,19 @@
+[versions]
+room = "2.4.2"
+
+[libraries]
+#AndroidX
+androidx-fragment-ktx = "androidx.fragment:fragment-ktx:1.4.1"
+androidx-fragment = "androidx.fragment:fragment:1.4.1"
+androidx-activity-ktx = "androidx.activity:activity-ktx:1.4.0"
+androidx-core = "androidx.core:core-ktx:1.7.0"
+
+# Room https://developer.android.com/jetpack/androidx/releases/room
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+androidx-room-testing = { module = "androidx.room:room-testing", version.ref = "room" }
+androidx-room-paging = "androidx.room:room-paging:2.5.0-alpha01"
+
+# WorkManager https://developer.android.com/jetpack/androidx/releases/work
+androidx-workmanager = "androidx.work:work-runtime-ktx:2.7.1"
