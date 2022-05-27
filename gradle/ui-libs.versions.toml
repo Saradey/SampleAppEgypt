@@ -1,6 +1,7 @@
 [versions]
 #https://developer.android.com/topic/libraries/architecture/paging/v3-overview
 pagingVersion = "3.1.1"
+navVersion = "2.4.2"
 
 [libraries]
 app-compat = "androidx.appcompat:appcompat:1.4.1"
@@ -19,3 +20,9 @@ viewBindingPropertyDelegate = "com.github.kirich1409:viewbindingpropertydelegate
 paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "pagingVersion" }
 #alternatively - without Android dependencies for tests
 paging-common = { module = "androidx.paging:paging-common", version.ref = "pagingVersion" }
+
+#Navigation
+#https://developer.android.com/jetpack/androidx/releases/navigation
+navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navVersion" }
+navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navVersion" }
+navigation-testing = { module = "androidx.navigation:navigation-testing", version.ref = "navVersion" }

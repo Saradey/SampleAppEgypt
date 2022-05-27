@@ -6,6 +6,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -49,6 +50,7 @@ dependencies {
     implementation(androidLibs.androidx.fragment.ktx)
     implementation(androidLibs.androidx.fragment)
     implementation(androidLibs.androidx.activity.ktx)
+    implementation(androidLibs.androidx.activity)
     implementation(androidLibs.androidx.core)
     implementation(androidLibs.androidx.workmanager)
 
@@ -92,6 +94,9 @@ dependencies {
     implementation(uiLibs.viewBindingPropertyDelegate)
     implementation(uiLibs.paging.runtime)
     testImplementation(uiLibs.paging.common)
+    implementation(uiLibs.navigation.fragment.ktx)
+    implementation(uiLibs.navigation.ui.ktx)
+    androidTestImplementation(uiLibs.navigation.testing)
 
     //Quality
     debugImplementation(devLibs.chucker)
