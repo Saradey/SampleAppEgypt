@@ -15,4 +15,8 @@ buildscript {
         set("minSdkVersionApp", 23)
         set("versionCodeApp", 1)
     }
+    dependencies {
+        // other plugins...
+        classpath("com.google.dagger:hilt-android-gradle-plugin:2.42")
+    }
 }
