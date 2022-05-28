@@ -20,5 +20,4 @@ dependencies {
     //UI
     implementation(uiLibs.app.compat)
     implementation(uiLibs.material)
-    implementation(uiLibs.constraint.layout)
 }
