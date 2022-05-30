@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ancient Egypt</string>
+    <string name="skip">Пропустить</string>
+    <string name="onboarding_text_first">Вас приветствует Древний Египет со своими тайнами и мифами.</string>
+    <string name="onboarding_text_second">Познайте историю одной из первых цивилизаций человечества.</string>
+    <string name="onboarding_text_third"></string>
+
+</resources>

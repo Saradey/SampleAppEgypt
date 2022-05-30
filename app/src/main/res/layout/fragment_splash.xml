@@ -3,11 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="?main_color_app" />
-
     <ImageView
         android:layout_width="@dimen/dp_200"
         android:layout_height="@dimen/dp_200"

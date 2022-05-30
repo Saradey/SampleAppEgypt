@@ -2,5 +2,6 @@
 <resources>
 
     <attr name="main_color_app" format="color" />
-
+    <attr name="accent_text_color" format="color" />
+    <attr name="not_accented_text_color" format="color" />
 </resources>
