@@ -7,11 +7,15 @@
 
     <style name="Text" />
 
-    <style name="Text.14">
-        <item name="android:textSize">@dimen/sp_14</item>
+    <style name="Text.18">
+        <item name="android:textSize">@dimen/sp_18</item>
     </style>
 
-    <style name="Text.14.NotAccented">
+    <style name="Text.18.NotAccented">
         <item name="android:textColor">?not_accented_text_color</item>
+    </style>
+
+    <style name="Text.18.Button">
+        <item name="textAllCaps">false</item>
     </style>
 </resources>

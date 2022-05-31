@@ -9,16 +9,63 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/skip"
-        android:textAppearance="@style/Text.14.NotAccented"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textAppearance="@style/Text.18.NotAccented"
+        app:layout_constraintEnd_toEndOf="@id/g_end"
+        app:layout_constraintTop_toTopOf="@id/g_top" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/vp2_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_next"
+        app:layout_constraintEnd_toEndOf="@id/g_end"
+        app:layout_constraintStart_toStartOf="@id/g_start"
+        app:layout_constraintTop_toBottomOf="@id/txv_skip" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_22"
+        android:text="@string/next"
+        app:layout_constraintBottom_toTopOf="@id/dti_indicator"
+        app:layout_constraintEnd_toStartOf="@id/g_end"
+        app:layout_constraintStart_toEndOf="@id/g_start" />
+
+    <com.saradey.studio.ancient.egypt.ui_kit.DotIndicatorView
+        android:id="@+id/dti_indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@id/g_bottom"
+        app:layout_constraintEnd_toStartOf="@id/g_end"
+        app:layout_constraintStart_toEndOf="@id/g_start" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dp_32" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_end"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/dp_32" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/dp_8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/dp_32" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

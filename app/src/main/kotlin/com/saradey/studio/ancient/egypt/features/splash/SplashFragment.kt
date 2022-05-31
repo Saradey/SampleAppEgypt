@@ -20,6 +20,6 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
     }
 
     companion object {
-        private const val DELAY_SPLASH = 2000L
+        private const val DELAY_SPLASH = 200L
     }
 }
