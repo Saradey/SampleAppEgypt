@@ -7,11 +7,28 @@
 
     <style name="Text" />
 
-    <style name="Text.CormorantSemibold">
+    <style name="Text.MainTextColor">
+        <item name="android:textColor">?main_text_color</item>
+    </style>
+
+    <style name="Text.MainTextColor.CormorantSemibold">
         <item name="fontFamily">@font/cormorant_semibold</item>
     </style>
 
-    <style name="Text.CormorantSemibold.18">
+    <style name="Text.MainTextColor.RalewayMedium">
+        <item name="fontFamily">@font/raleway_medium</item>
+    </style>
+
+    <style name="Text.MainTextColor.CormorantSemibold.18">
         <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="Text.MainTextColor.RalewayMedium.16">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="Text.MainTextColor.RalewayMedium.16.OnboardingDescriptionText">
+        <item name="android:letterSpacing">0.1</item>
+        <item name="lineSpacing">@dimen/dp_4</item>
     </style>
 </resources>

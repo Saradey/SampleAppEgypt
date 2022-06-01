@@ -69,4 +69,5 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_end="@dimen/dp_22" />
 
+    <include layout="@layout/layout_splash_background" />
 </androidx.constraintlayout.widget.ConstraintLayout>

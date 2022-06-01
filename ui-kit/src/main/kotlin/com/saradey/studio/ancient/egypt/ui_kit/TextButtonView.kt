@@ -17,13 +17,10 @@ class TextButtonView @JvmOverloads constructor(
     private val padding = context.dpToPx(PADDING)
 
     init {
-        setTextAppearance(R.style.Text_CormorantSemibold_18)
+        setTextAppearance(R.style.Text_MainTextColor_CormorantSemibold_18)
         clipToOutline = true
         setBackgroundResource(R.drawable.text_rectangle_round)
         setPadding(padding, padding, padding, padding)
-        val typedColor = TypedValue()
-        context.theme.resolveAttribute(R.attr.main_text_color, typedColor, true)
-        setTextColor(ContextCompat.getColor(context, typedColor.resourceId))
         val typedForeground = TypedValue()
         context.theme.resolveAttribute(
             android.R.attr.selectableItemBackground,
