@@ -34,6 +34,7 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.initViewPager()
+        binding.initUi()
     }
 
     private fun FragmentOnboardingBinding.initViewPager() {
@@ -44,5 +45,11 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
             OnboardingModel(R.string.onboarding_text_second, R.drawable.onboarding_second),
             OnboardingModel(R.string.onboarding_text_third, R.drawable.onboarding_third)
         )
+    }
+
+    private fun FragmentOnboardingBinding.initUi() {
+        txvSkip.setOnClickListener {
+
+        }
     }
 }
