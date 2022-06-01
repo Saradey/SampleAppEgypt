@@ -6,6 +6,7 @@ import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.fragment.app.Fragment
+import androidx.viewpager2.widget.ViewPager2
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.saradey.studio.ancient.egypt.R
 import com.saradey.studio.ancient.egypt.databinding.FragmentOnboardingBinding
@@ -44,6 +45,21 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
             OnboardingModel(R.string.onboarding_text_first, R.drawable.onboarding_first),
             OnboardingModel(R.string.onboarding_text_second, R.drawable.onboarding_second),
             OnboardingModel(R.string.onboarding_text_third, R.drawable.onboarding_third)
+        )
+        var nextDotsIndicator = 0
+        vp2Content.registerOnPageChangeCallback(
+            object : ViewPager2.OnPageChangeCallback() {
+                override fun onPageScrolled(
+                    position: Int,
+                    positionOffset: Float,
+                    positionOffsetPixels: Int
+                ) {
+                    if (nextDotsIndicator != position) {
+                        nextDotsIndicator = position
+                        dtiIndicator.nextPage = nextDotsIndicator + 1
+                    }
+                }
+            }
         )
     }
 
