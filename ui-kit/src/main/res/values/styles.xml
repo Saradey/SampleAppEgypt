@@ -2,20 +2,9 @@
 <resources>
 
     <style name="AppBackground">
-        <item name="android:background">?main_color_app</item>
+        <item name="android:background">?attr/main_background_color_app</item>
     </style>
 
     <style name="Text" />
 
-    <style name="Text.18">
-        <item name="android:textSize">@dimen/sp_18</item>
-    </style>
-
-    <style name="Text.18.NotAccented">
-        <item name="android:textColor">?not_accented_text_color</item>
-    </style>
-
-    <style name="Text.18.Button">
-        <item name="textAllCaps">false</item>
-    </style>
 </resources>

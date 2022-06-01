@@ -15,7 +15,7 @@ import com.saradey.studio.ancient.egypt.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private val binding: ActivityMainBinding by viewBinding(ActivityMainBinding::bind)
+    private val binding by viewBinding(ActivityMainBinding::bind)
 
     private var insetsSetup = false
 
@@ -28,14 +28,16 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupStatusBar() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
-        window.statusBarColor = Color.TRANSPARENT
-        WindowCompat.getInsetsController(window, window.decorView)?.let { controller ->
-            controller.isAppearanceLightStatusBars = false
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.R) {
+            window.statusBarColor = Color.TRANSPARENT
+            WindowCompat.getInsetsController(window, window.decorView)?.let { controller ->
+                controller.isAppearanceLightStatusBars = false
+            }
         }
     }
 
     private fun ActivityMainBinding.setupInsets() {
-        root.setOnApplyWindowInsetsListener { v, insets ->
+        navHostFragment.setOnApplyWindowInsetsListener { v, insets ->
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
                 v.y = insets.getInsets(WindowInsets.Type.statusBars()).top.toFloat()
                 updateHeight(

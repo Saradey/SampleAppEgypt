@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@+id/onboardingFragment"
-        android:name="com.saradey.studio.ancient.egypt.features.onboarding.OnboardingFragment"
+        android:name="com.saradey.studio.ancient.egypt.features.onboarding.ui.OnboardingFragment"
         android:label="onboarding_fragment"
         tools:layout="@layout/fragment_onboarding">
 
