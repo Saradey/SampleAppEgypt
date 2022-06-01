@@ -17,14 +17,14 @@
         android:id="@+id/vp2_content"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/btn_next"
+        app:layout_constraintBottom_toTopOf="@id/txv_next"
         app:layout_constraintEnd_toEndOf="@id/g_end"
         app:layout_constraintStart_toStartOf="@id/g_start"
         app:layout_constraintTop_toBottomOf="@id/txv_skip"
         tools:listitem="@layout/item_onboarding" />
 
-    <Button
-        android:id="@+id/btn_next"
+    <com.saradey.studio.ancient.egypt.ui_kit.TextButtonAccentView
+        android:id="@+id/txv_next"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/dp_22"

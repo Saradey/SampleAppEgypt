@@ -7,7 +7,7 @@ import android.view.Gravity
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.content.ContextCompat
 
-class TextButtonView @JvmOverloads constructor(
+class TextButtonAccentView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0,
@@ -16,10 +16,11 @@ class TextButtonView @JvmOverloads constructor(
     private val padding = context.dpToPx(PADDING)
 
     init {
-        setTextAppearance(R.style.Text_MainTextColor_CormorantSemibold_18)
+        setTextAppearance(R.style.Text_AccentTextColor_CormorantSemibold_28)
         clipToOutline = true
-        setBackgroundResource(R.drawable.background_text_rectangle_round)
         setPadding(padding, padding, padding, padding)
+        setBackgroundResource(R.drawable.background_white_text_rectangle_round)
+        gravity = Gravity.CENTER
         val typedForeground = TypedValue()
         context.theme.resolveAttribute(
             android.R.attr.selectableItemBackground,
@@ -27,10 +28,9 @@ class TextButtonView @JvmOverloads constructor(
             true
         )
         foreground = ContextCompat.getDrawable(context, typedForeground.resourceId)
-        gravity = Gravity.CENTER
     }
 
     companion object {
-        private const val PADDING = 4
+        private const val PADDING = 8
     }
 }

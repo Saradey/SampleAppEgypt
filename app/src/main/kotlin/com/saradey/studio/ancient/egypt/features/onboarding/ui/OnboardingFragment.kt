@@ -51,5 +51,8 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
         txvSkip.setOnClickListener {
 
         }
+        txvNext.setOnClickListener {
+
+        }
     }
 }

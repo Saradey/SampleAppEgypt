@@ -11,7 +11,15 @@
         <item name="android:textColor">?main_text_color</item>
     </style>
 
+    <style name="Text.AccentTextColor">
+        <item name="android:textColor">?accent_text_color</item>
+    </style>
+
     <style name="Text.MainTextColor.CormorantSemibold">
+        <item name="fontFamily">@font/cormorant_semibold</item>
+    </style>
+
+    <style name="Text.AccentTextColor.CormorantSemibold">
         <item name="fontFamily">@font/cormorant_semibold</item>
     </style>
 
@@ -31,4 +39,10 @@
         <item name="android:letterSpacing">0.1</item>
         <item name="lineSpacing">@dimen/dp_4</item>
     </style>
+
+    <style name="Text.AccentTextColor.CormorantSemibold.28">
+        <item name="android:textSize">@dimen/sp_28</item>
+    </style>
+
+
 </resources>
