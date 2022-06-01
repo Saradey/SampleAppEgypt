@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.Navigation
 import com.saradey.studio.ancient.egypt.R
+import com.saradey.studio.ancient.egypt.utils.StatusBarUtils
 import kotlinx.coroutines.delay
 
 

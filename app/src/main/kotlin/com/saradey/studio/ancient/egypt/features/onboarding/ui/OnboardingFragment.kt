@@ -11,6 +11,7 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.saradey.studio.ancient.egypt.R
 import com.saradey.studio.ancient.egypt.databinding.FragmentOnboardingBinding
 import com.saradey.studio.ancient.egypt.features.onboarding.models.OnboardingModel
+import com.saradey.studio.ancient.egypt.utils.StatusBarUtils
 
 class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
 
@@ -20,19 +21,12 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val window = requireActivity().window
-        val controller = WindowCompat.getInsetsController(window, window.decorView)
-        controller?.hide(WindowInsetsCompat.Type.statusBars())
-        controller?.systemBarsBehavior =
-            WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
+        StatusBarUtils.showStatusBar(requireActivity().window)
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        val window = requireActivity().window
-        val controller = WindowCompat.getInsetsController(window, window.decorView)
-        controller?.show(WindowInsetsCompat.Type.statusBars())
-        controller?.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_BARS_BY_TOUCH
+        StatusBarUtils.hideStatusBar(requireActivity().window)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
