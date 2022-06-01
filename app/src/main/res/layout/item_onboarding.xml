@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/raleway_medium"
         android:gravity="center"
-        android:textColor="?text_color"
+        android:textColor="?attr/main_text_color"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -22,7 +22,7 @@ class TextButtonView @JvmOverloads constructor(
         setBackgroundResource(R.drawable.text_rectangle_round)
         setPadding(padding, padding, padding, padding)
         val typedColor = TypedValue()
-        context.theme.resolveAttribute(R.attr.text_color, typedColor, true)
+        context.theme.resolveAttribute(R.attr.main_text_color, typedColor, true)
         setTextColor(ContextCompat.getColor(context, typedColor.resourceId))
         val typedForeground = TypedValue()
         context.theme.resolveAttribute(

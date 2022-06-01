@@ -6,8 +6,8 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
 
         <item name="android:windowBackground">@color/dark_blue</item>
-        <item name="main_background_color_app">@color/dark_blue</item>
-        <item name="text_color">@color/white</item>
+        <item name="main_background_color">@color/dark_blue</item>
+        <item name="main_text_color">@color/white</item>
     </style>
 
 </resources>
