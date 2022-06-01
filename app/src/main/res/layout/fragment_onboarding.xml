@@ -18,8 +18,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/txv_next"
-        app:layout_constraintEnd_toEndOf="@id/g_end"
-        app:layout_constraintStart_toStartOf="@id/g_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txv_skip"
         tools:listitem="@layout/item_onboarding" />
 
@@ -46,7 +46,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="@dimen/dp_32" />
+        app:layout_constraintGuide_begin="@dimen/dp_22" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/g_end"

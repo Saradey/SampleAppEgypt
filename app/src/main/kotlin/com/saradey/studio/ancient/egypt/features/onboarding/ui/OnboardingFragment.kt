@@ -16,6 +16,8 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
 
     private val binding by viewBinding(FragmentOnboardingBinding::bind)
 
+    private var nextDotsIndicator = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val window = requireActivity().window
@@ -46,7 +48,6 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
             OnboardingModel(R.string.onboarding_text_second, R.drawable.onboarding_second),
             OnboardingModel(R.string.onboarding_text_third, R.drawable.onboarding_third)
         )
-        var nextDotsIndicator = 0
         vp2Content.registerOnPageChangeCallback(
             object : ViewPager2.OnPageChangeCallback() {
                 override fun onPageScrolled(
@@ -58,6 +59,11 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
                         nextDotsIndicator = position
                         dtiIndicator.nextPage = nextDotsIndicator + 1
                     }
+                    if (position >= 2) {
+                        txvNext.setText(R.string.get_started)
+                    } else {
+                        txvNext.setText(R.string.next)
+                    }
                 }
             }
         )
@@ -65,10 +71,14 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
 
     private fun FragmentOnboardingBinding.initUi() {
         txvSkip.setOnClickListener {
-
+            //TODO переход на главный экран
         }
         txvNext.setOnClickListener {
-
+            if (vp2Content.currentItem >= 2) {
+                //TODO переход на главный экран
+            } else {
+                vp2Content.currentItem++
+            }
         }
     }
 }
