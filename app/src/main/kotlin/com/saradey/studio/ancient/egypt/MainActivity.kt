@@ -11,9 +11,9 @@ class MainActivity : AppCompatActivity() {
     private val binding by viewBinding(ActivityMainBinding::bind)
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        SystemComponentUtils.setupStatusBar(window)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        SystemComponentUtils.setupStatusBar(window)
-        SystemComponentUtils.setupInsets(binding.navHostFragment)
+        SystemComponentUtils.setupInsetsBottom(binding.navHostFragment)
     }
 }
