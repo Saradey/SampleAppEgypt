@@ -18,7 +18,7 @@ class TextButtonAccentView @JvmOverloads constructor(
     private val padding = context.dpToPx(PADDING)
 
     init {
-        setTextAppearance(R.style.Text_AccentTextColor_CormorantSemibold_28)
+        setTextAppearance(R.style.Text_AccentTextColor_CormorantSemibold_26)
         clipToOutline = true
         setPadding(padding, padding, padding, padding)
         setBackgroundResource(R.drawable.background_white_text_rectangle_round)

@@ -7,14 +7,14 @@ import androidx.core.view.WindowInsetsControllerCompat
 
 object StatusBarUtils {
 
-    fun showStatusBar(window: Window) {
+    fun hideStatusBar(window: Window) {
         val controller = WindowCompat.getInsetsController(window, window.decorView)
         controller?.hide(WindowInsetsCompat.Type.statusBars())
         controller?.systemBarsBehavior =
             WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
     }
 
-    fun hideStatusBar(window: Window) {
+    fun showStatusBar(window: Window) {
         val controller = WindowCompat.getInsetsController(window, window.decorView)
         controller?.show(WindowInsetsCompat.Type.statusBars())
         controller?.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_BARS_BY_TOUCH

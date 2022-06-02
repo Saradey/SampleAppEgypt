@@ -40,8 +40,8 @@
         <item name="lineSpacing">@dimen/dp_4</item>
     </style>
 
-    <style name="Text.AccentTextColor.CormorantSemibold.28">
-        <item name="android:textSize">@dimen/sp_28</item>
+    <style name="Text.AccentTextColor.CormorantSemibold.26">
+        <item name="android:textSize">@dimen/sp_26</item>
     </style>
 
 

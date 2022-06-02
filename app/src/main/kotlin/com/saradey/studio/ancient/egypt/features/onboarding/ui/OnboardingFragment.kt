@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import androidx.core.view.isGone
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.viewpager2.widget.ViewPager2
@@ -14,7 +13,6 @@ import com.saradey.studio.ancient.egypt.common.AnimationListenerDefault
 import com.saradey.studio.ancient.egypt.databinding.FragmentOnboardingBinding
 import com.saradey.studio.ancient.egypt.features.onboarding.models.OnboardingModel
 import com.saradey.studio.ancient.egypt.utils.StatusBarUtils
-import kotlinx.coroutines.delay
 
 class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
 
@@ -26,12 +24,12 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        StatusBarUtils.showStatusBar(requireActivity().window)
+        StatusBarUtils.hideStatusBar(requireActivity().window)
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        StatusBarUtils.hideStatusBar(requireActivity().window)
+        StatusBarUtils.showStatusBar(requireActivity().window)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -101,7 +99,7 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
             txvSkip.startAnimation(animationTop)
             txvSkip.isEnabled = false
             animationTop.setAnimationListener(object : AnimationListenerDefault() {
-                override fun onAnimationStart(animation: Animation?) {
+                override fun onAnimationEnd(animation: Animation?) {
                     txvSkip.isEnabled = true
                 }
             })
