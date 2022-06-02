@@ -2,20 +2,25 @@ package com.saradey.studio.ancient.egypt.features.onboarding.ui
 
 import android.os.Bundle
 import android.view.View
-import androidx.core.view.WindowCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.WindowInsetsControllerCompat
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
+import androidx.core.view.isGone
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import androidx.viewpager2.widget.ViewPager2
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.saradey.studio.ancient.egypt.R
+import com.saradey.studio.ancient.egypt.common.AnimationListenerDefault
 import com.saradey.studio.ancient.egypt.databinding.FragmentOnboardingBinding
 import com.saradey.studio.ancient.egypt.features.onboarding.models.OnboardingModel
 import com.saradey.studio.ancient.egypt.utils.StatusBarUtils
+import kotlinx.coroutines.delay
 
 class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
 
     private val binding by viewBinding(FragmentOnboardingBinding::bind)
+
+    private val adapter = OnboardingAdapter()
 
     private var nextDotsIndicator = 0
 
@@ -31,11 +36,11 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.initViewPager()
+        binding.startAnimationScreen()
         binding.initUi()
     }
 
     private fun FragmentOnboardingBinding.initViewPager() {
-        val adapter = OnboardingAdapter()
         vp2Content.adapter = adapter
         adapter.models = mutableListOf(
             OnboardingModel(R.string.onboarding_text_first, R.drawable.onboarding_first),
@@ -73,6 +78,33 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
             } else {
                 vp2Content.currentItem++
             }
+        }
+    }
+
+    private fun FragmentOnboardingBinding.startAnimationScreen() {
+        lifecycleScope.launchWhenResumed {
+            val animationBottom =
+                AnimationUtils.loadAnimation(context, R.anim.bottom_onboarding_element_show)
+            txvNext.startAnimation(animationBottom)
+            dtiIndicator.startAnimation(animationBottom)
+            txvNext.isEnabled = false
+            animationBottom.setAnimationListener(object : AnimationListenerDefault() {
+                override fun onAnimationEnd(animation: Animation?) {
+                    txvNext.isEnabled = true
+                }
+            })
+            val animationCenter =
+                AnimationUtils.loadAnimation(context, R.anim.centre_onboarding_element_show)
+            vp2Content.startAnimation(animationCenter)
+            val animationTop =
+                AnimationUtils.loadAnimation(context, R.anim.bottom_onboarding_element_show)
+            txvSkip.startAnimation(animationTop)
+            txvSkip.isEnabled = false
+            animationTop.setAnimationListener(object : AnimationListenerDefault() {
+                override fun onAnimationStart(animation: Animation?) {
+                    txvSkip.isEnabled = true
+                }
+            })
         }
     }
 }
