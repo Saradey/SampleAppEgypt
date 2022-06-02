@@ -1,4 +1,4 @@
-package com.saradey.studio.ancient.egypt.ui_kit
+package com.saradey.studio.ancient.egypt.ui_kit.view
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,6 +6,8 @@ import android.util.TypedValue
 import android.view.Gravity
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.content.ContextCompat
+import com.saradey.studio.ancient.egypt.ui_kit.R
+import com.saradey.studio.ancient.egypt.ui_kit.extensions.dpToPx
 
 class TextButtonAccentView @JvmOverloads constructor(
     context: Context,

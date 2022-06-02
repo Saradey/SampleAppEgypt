@@ -1,4 +1,4 @@
-package com.saradey.studio.ancient.egypt.ui_kit
+package com.saradey.studio.ancient.egypt.ui_kit.extensions
 
 import android.content.Context
 import android.util.TypedValue

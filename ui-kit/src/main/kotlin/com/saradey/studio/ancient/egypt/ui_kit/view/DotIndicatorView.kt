@@ -1,4 +1,4 @@
-package com.saradey.studio.ancient.egypt.ui_kit
+package com.saradey.studio.ancient.egypt.ui_kit.view
 
 import android.content.Context
 import android.graphics.Canvas
@@ -7,6 +7,8 @@ import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
 import androidx.core.content.ContextCompat
+import com.saradey.studio.ancient.egypt.ui_kit.R
+import com.saradey.studio.ancient.egypt.ui_kit.extensions.dpToPx
 
 class DotIndicatorView @JvmOverloads constructor(
     context: Context,
