@@ -6,6 +6,7 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.Navigation
 import androidx.viewpager2.widget.ViewPager2
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.saradey.studio.ancient.egypt.R
@@ -68,11 +69,13 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
 
     private fun FragmentOnboardingBinding.initUi() {
         txvSkip.setOnClickListener {
-            //TODO переход на главный экран
+            Navigation.findNavController(requireActivity(), R.id.nav_host_fragment)
+                .navigate(R.id.action_splashFragment_to_mainMenuFragment)
         }
         txvNext.setOnClickListener {
             if (vp2Content.currentItem >= 2) {
-                //TODO переход на главный экран
+                Navigation.findNavController(requireActivity(), R.id.nav_host_fragment)
+                    .navigate(R.id.action_splashFragment_to_mainMenuFragment)
             } else {
                 vp2Content.currentItem++
             }
