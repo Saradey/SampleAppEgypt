@@ -2,11 +2,11 @@
 #https://dagger.dev/hilt/gradle-setup
 daggerHilt = "2.42"
 #https://github.com/Kotlin/kotlinx.coroutines
-coroutines = "1.6.1"
+coroutines = "1.6.3"
 # https://github.com/square/retrofit
 retrofit = "2.9.0"
 # https://github.com/square/okhttp
-okhttp = "4.9.3"
+okhttp = "4.10.0"
 
 [libraries]
 #Dagger Hilt
