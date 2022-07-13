@@ -44,4 +44,10 @@
         <item name="android:textSize">@dimen/sp_26</item>
     </style>
 
+    <style name="BottomNavigationAncientEgypt">
+        <item name="android:background">@drawable/background_bottom_navigation</item>
+        <item name="android:layout_height">@dimen/dp_70</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
 </resources>

@@ -18,6 +18,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 dependencies {
     //UI
@@ -25,4 +28,5 @@ dependencies {
     implementation(uiLibs.app.compat)
     implementation(uiLibs.material)
     implementation(uiLibs.constraint.layout)
+    implementation(uiLibs.viewBindingPropertyDelegate)
 }
