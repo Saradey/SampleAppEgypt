@@ -3,14 +3,14 @@
     android:drawable="@drawable/ic_main_menu">
     <target
         android:name="group_1"
-        android:animation="@animator/rotate" />
+        android:animation="@animator/rotate_500" />
     <target
         android:name="group_2"
-        android:animation="@animator/rotate" />
+        android:animation="@animator/rotate_300" />
     <target
         android:name="group_3"
-        android:animation="@animator/rotate" />
+        android:animation="@animator/rotate_500" />
     <target
         android:name="group_4"
-        android:animation="@animator/rotate" />
+        android:animation="@animator/rotate_300" />
 </animated-vector>

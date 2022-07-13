@@ -12,6 +12,6 @@ class MainMenuFragment : Fragment(R.layout.fragment_main_menu) {
     private val binding: FragmentMainMenuBinding by viewBinding(FragmentMainMenuBinding::bind)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.btnMenu.setOnApplyWindowInsetsListener(null)
+        binding.btnvMenu.setOnApplyWindowInsetsListener(null)
     }
 }
