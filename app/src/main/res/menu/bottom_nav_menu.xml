@@ -12,7 +12,7 @@
 
     <item
         android:id="@+id/profile"
-        android:icon="@drawable/ic_stub"
+        android:icon="@drawable/item_profile"
         android:title="@string/bottom_nav_title_profile"
         app:showAsAction="always" />
 
