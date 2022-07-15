@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.saradey.studio.ancient.egypt.R
-import com.saradey.studio.ancient.egypt.common.DefaultViewHolderItemAnimator
 import com.saradey.studio.ancient.egypt.databinding.ItemOnboardingBinding
 import com.saradey.studio.ancient.egypt.features.onboarding.models.OnboardingModel
 
@@ -37,7 +36,7 @@ class OnboardingAdapter : RecyclerView.Adapter<OnboardingAdapter.OnboardingViewH
 
     override fun getItemCount(): Int = models.size
 
-    inner class OnboardingViewHolder(
+    class OnboardingViewHolder(
         view: View
     ) : RecyclerView.ViewHolder(view) {
 
