@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="AlwaysShowAction">
+
+    <item
+        android:id="@+id/main"
+        android:icon="@drawable/item_main_menu"
+        android:title="@string/bottom_nav_title_main"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/item_profile"
+        android:title="@string/bottom_nav_title_profile"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/item_settings"
+        android:title="@string/bottom_nav_title_settings"
+        app:showAsAction="always" />
+</menu>

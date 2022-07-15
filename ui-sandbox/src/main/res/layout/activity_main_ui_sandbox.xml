@@ -160,5 +160,41 @@
             android:textColor="@color/white"
             android:textSize="16sp"
             app:drawableStartCompat="@drawable/color_text_accent_circle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="Styles View Design System"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/white" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/btnv_menu"
+            style="@style/BottomNavigationAncientEgypt"
+            android:layout_marginTop="@dimen/dp_12"
+            app:menu="@menu/bottom_nav_menu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="Costume View Design System"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/white" />
+        
+
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

@@ -55,6 +55,7 @@
         <entry key="ui-sandbox/src/main/res/drawable/color_main_text_circle.xml" value="0.1145" />
         <entry key="ui-sandbox/src/main/res/drawable/color_text_accent_circle.xml" value="0.1145" />
         <entry key="ui-sandbox/src/main/res/layout/activity_main_ui_sandbox.xml" value="0.161231884057971" />
+        <entry key="ui-sandbox/src/main/res/menu/bottom_nav_menu.xml" value="0.22291666666666668" />
         <entry key="ui-sandbox/src/main/res/mipmap-anydpi-v26/ic_launcher_ancient_egypt.xml" value="0.1145" />
       </map>
     </option>
