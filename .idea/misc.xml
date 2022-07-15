@@ -51,6 +51,7 @@
         <entry key="ui-kit/src/main/res/layout/view_text_button.xml" value="0.1693840579710145" />
         <entry key="ui-kit/src/main/res/menu/bottom_nav_menu.xml" value="0.2234375" />
         <entry key="ui-sandbox/src/main/res/drawable/color_accent_background_circle.xml" value="0.1145" />
+        <entry key="ui-sandbox/src/main/res/drawable/color_circle_active_text.xml" value="0.1145" />
         <entry key="ui-sandbox/src/main/res/drawable/color_circle_main_background.xml" value="0.1145" />
         <entry key="ui-sandbox/src/main/res/drawable/color_main_text_circle.xml" value="0.1145" />
         <entry key="ui-sandbox/src/main/res/drawable/color_text_accent_circle.xml" value="0.1145" />

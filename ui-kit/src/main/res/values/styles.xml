@@ -15,6 +15,10 @@
         <item name="android:textColor">?accent_text_color</item>
     </style>
 
+    <style name="Text.ActiveTextColorAccentBackground">
+        <item name="android:textColor">?active_text_color</item>
+    </style>
+
     <style name="Text.MainTextColor.CormorantSemibold">
         <item name="fontFamily">@font/cormorant_semibold</item>
     </style>
@@ -25,6 +29,14 @@
 
     <style name="Text.MainTextColor.RalewayMedium">
         <item name="fontFamily">@font/raleway_medium</item>
+    </style>
+
+    <style name="Text.ActiveTextColorAccentBackground.RalewayMedium">
+        <item name="fontFamily">@font/raleway_medium</item>
+    </style>
+
+    <style name="Text.ActiveTextColorAccentBackground.RalewayMedium.16">
+        <item name="android:textSize">@dimen/sp_16</item>
     </style>
 
     <style name="Text.MainTextColor.CormorantSemibold.18">
@@ -49,10 +61,10 @@
         <item name="android:layout_height">@dimen/dp_70</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="itemTextAppearanceActive">
-            @style/Text.MainTextColor.RalewayMedium.16.OnboardingDescriptionText
+            @style/Text.ActiveTextColorAccentBackground.RalewayMedium.16
         </item>
         <item name="itemTextAppearanceInactive">
-            @style/Text.MainTextColor.RalewayMedium.16.OnboardingDescriptionText
+            @style/Text.MainTextColor.RalewayMedium.16
         </item>
         <item name="itemIconSize">@dimen/dp_28</item>
     </style>

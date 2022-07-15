@@ -110,6 +110,38 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dp_16"
             android:layout_marginTop="@dimen/dp_12"
+            android:background="?accent_background_color"
+            android:padding="@dimen/dp_4"
+            android:text="Text.ActiveTextColorAccentBackground"
+            android:textAppearance="@style/Text.ActiveTextColorAccentBackground"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="?accent_background_color"
+            android:padding="@dimen/dp_4"
+            android:text="Text.ActiveTextColorAccentBackground.RalewayMedium"
+            android:textAppearance="@style/Text.ActiveTextColorAccentBackground.RalewayMedium"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="?accent_background_color"
+            android:padding="@dimen/dp_4"
+            android:text="Text.ActiveTextColorAccentBackground.RalewayMedium.16"
+            android:textAppearance="@style/Text.ActiveTextColorAccentBackground.RalewayMedium.16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
             android:text="Colors Design System"
             android:textColor="@color/white"
             android:textSize="24sp" />
@@ -162,6 +194,17 @@
             android:textColor="@color/white"
             android:textSize="16sp"
             app:drawableStartCompat="@drawable/color_text_accent_circle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:drawablePadding="@dimen/dp_4"
+            android:text="active_text_color:#C806132E"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/color_circle_active_text" />
 
         <TextView
             android:layout_width="wrap_content"

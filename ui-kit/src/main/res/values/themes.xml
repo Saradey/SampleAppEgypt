@@ -6,5 +6,6 @@
         <item name="accent_background_color">@color/dark_orange</item>
         <item name="main_text_color">@color/white</item>
         <item name="accent_text_color">@color/lite_orange</item>
+        <item name="active_text_color">@color/dark_light_blue_alpha</item>
     </style>
 </resources>
