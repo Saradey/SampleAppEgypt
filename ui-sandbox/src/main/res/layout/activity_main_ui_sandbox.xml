@@ -79,6 +79,45 @@
             android:text="Text.MainTextColor.CormorantSemibold.18"
             android:textAppearance="@style/Text.MainTextColor.CormorantSemibold.18" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="Text.MainTextColor.RalewayMedium.16"
+            android:textAppearance="@style/Text.MainTextColor.RalewayMedium.16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="Text.MainTextColor.RalewayMedium.16.OnboardingDescriptionText"
+            android:textAppearance="@style/Text.MainTextColor.RalewayMedium.16.OnboardingDescriptionText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="Text.AccentTextColor.CormorantSemibold.26"
+            android:textAppearance="@style/Text.AccentTextColor.CormorantSemibold.26" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="Component Styles DesignSystem"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/white" />
+
+
 
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
