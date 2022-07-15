@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_12"
         tools:context=".MainUiSandboxActivity">
 
         <TextView
@@ -176,7 +177,6 @@
             android:background="@color/white" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/btnv_menu"
             style="@style/BottomNavigationAncientEgypt"
             android:layout_marginTop="@dimen/dp_12"
             app:menu="@menu/bottom_nav_menu" />
@@ -194,7 +194,54 @@
             android:layout_width="match_parent"
             android:layout_height="4dp"
             android:background="@color/white" />
-        
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="DotIndicatorView:"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.saradey.studio.ancient.egypt.ui_kit.view.DotIndicatorView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="TextButtonAccentView:"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.saradey.studio.ancient.egypt.ui_kit.view.TextButtonAccentView
+            android:id="@+id/txv_sample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:text="Далее" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="TextButtonView:"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.saradey.studio.ancient.egypt.ui_kit.view.TextButtonView
+            android:id="@+id/txv_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Пропустить" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

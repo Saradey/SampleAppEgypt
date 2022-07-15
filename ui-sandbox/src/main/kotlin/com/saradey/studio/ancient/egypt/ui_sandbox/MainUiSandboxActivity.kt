@@ -14,5 +14,7 @@ class MainUiSandboxActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_ui_sandbox)
+        binding.txvSample.setOnClickListener {}
+        binding.txvSkip.setOnClickListener {}
     }
 }
