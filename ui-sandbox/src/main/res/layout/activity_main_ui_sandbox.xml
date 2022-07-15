@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dp_16"
             android:layout_marginTop="@dimen/dp_12"
-            android:text="Text Styles DesignSystem"
+            android:text="Text Styles Design System"
             android:textColor="@color/white"
             android:textSize="24sp" />
 
@@ -108,7 +108,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dp_16"
             android:layout_marginTop="@dimen/dp_12"
-            android:text="Component Styles DesignSystem"
+            android:text="Colors Design System"
             android:textColor="@color/white"
             android:textSize="24sp" />
 
@@ -117,7 +117,48 @@
             android:layout_height="4dp"
             android:background="@color/white" />
 
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:drawablePadding="@dimen/dp_4"
+            android:text="main_background_color:#0B152E"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/color_circle_main_background" />
 
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:drawablePadding="@dimen/dp_4"
+            android:text="accent_background_color:#DC7A2E"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/color_accent_background_circle" />
 
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:drawablePadding="@dimen/dp_4"
+            android:text="main_text_color:#FFFFFFFF"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/color_main_text_circle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:drawablePadding="@dimen/dp_4"
+            android:text="accent_text_color:#E49B52"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/color_text_accent_circle" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
